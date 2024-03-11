@@ -1,0 +1,6 @@
+##Q1. 
+The relationship between the "Product" and "Product_Category" entities in the database diagram is a Many-to-One relationship. This means that multiple products can belong to the same product category, but each product can only belong to one category. This relationship is established through a foreign key constraint in the "Product" table, where the primary key of the "Product_Category" table is referenced as a foreign key in the "Product" table.
+
+##Q2.
+
+ To ensure that each product in the "Product" table has a valid category assigned to it, you can enforce referential integrity using foreign key constraints. This means that the foreign key column in the "Product" table, which references the primary key column in the "Product_Category" table, should only allow values that exist in the primary key column of the "Product_Category" table. Additionally, you can implement data validation checks at the application level to ensure that new products are assigned to valid categories before they are inserted into the database. This combination of database constraints and application logic helps maintain data integrity and consistency.
